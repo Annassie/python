@@ -9,8 +9,8 @@ Basic Python:
 
 - arithmetic operations
 - logical operations
-- if, for statements
-- loops (while, for in)
+- if, for - statements
+- loops (while, for in, range() + for in)
 - lists
 
 
