@@ -15,4 +15,7 @@ sec = sec % 86400
 
 #print(hour, min, duration)
 
-print(day + 's', hour, min, sec)
+print(day + 's', hour + '', min, sec)
+
+
+## print(f"")

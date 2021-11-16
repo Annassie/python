@@ -1,18 +1,11 @@
-num = list(range(1, 101))
+# Realise declension of the word "percent" in phrase "N percents"
+# And print this phrase on a separate line for each of numbers
+# in range from 1 to 100
 
-singular = ['процент']
-declension = []
-
-
-for i in range(0, len(num)):
-    singular = list(num[i])
-    if num == 1 and (num % 10 == 1):
-        print(singular)
-    elif num > 1 and num < 5 and (num % 10 == 3, 4, 5):
-        singular.append('а')
+for idx in range(1, 101):
+    if idx == 1 or idx % 10 == 1:
+        print(idx, 'процент')
+    elif 2 <= idx <= 4 or idx % 10 == 2 or idx % 10 == 3 or idx % 10 == 4:
+        print(idx, 'процента')
     else:
-        singular.append('ов')
-
-    declension.append(singular)
-
-print(declension)
+        print(idx, "процентов")
