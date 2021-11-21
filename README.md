@@ -16,6 +16,10 @@ Basic Python:
 
 ### Task_2
 
+- types
+- object, attribute, methods
+- difference between list and tuple
+- working with lists and strings
 
 ### Task_3
 
