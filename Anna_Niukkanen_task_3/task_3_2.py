@@ -1,23 +1,40 @@
-# Write the function, which returns numbers 0-10 from Enlgish to Russian.
+# Modify the previous function into num_translate_adv():
+# implement correct work with numbers starting with a capital letter
+# the result must also be capitalized
 
-from random import choice
 
 def num_translate(num):
-    eng_rus = {
-        'zero': 'ноль',
-        'one': 'один',
-        'two': 'два',
-        'three': 'три',
-        'four': 'four',
-        'five': 'пять',
-        'six': 'шесть',
-        'seven': 'семь',
-        'eight': 'восемь',
-        'nine': 'девять',
-        'ten': 'десять',
-    }
-    return eng_rus.get(num, None)
-  #  print(num["one"])
+    # for num in eng_rus:
+    #     if num.title():
+    #        # num[val].title()
+    #         eng_rus[num] = num.title()
+    #         print(f"{num.title()}")
+    #     else:
+    #         print(f"{num}")
+    # for element in num:
+    #     if element.title():
+    #         print(f"{element.title()}")
+    #     else:
+    #         print(f"{element}")
+    if num.title():
+        print(f"{num.title()}")
+    else:
+        print(f"{num}")
 
 
-num_translate('one')
+eng_rus = {
+    'zero': 'ноль',
+    'one': 'один',
+    'two': 'два',
+    'three': 'три',
+    'four': 'четыре',
+    'five': 'пять',
+    'six': 'шесть',
+    'seven': 'семь',
+    'eight': 'восемь',
+    'nine': 'девять',
+    'ten': 'десять',
+}
+
+
+num_translate(eng_rus.get("ten"))
