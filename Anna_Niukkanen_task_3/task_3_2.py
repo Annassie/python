@@ -3,38 +3,36 @@
 # the result must also be capitalized
 
 
-def num_translate(num):
-    # for num in eng_rus:
-    #     if num.title():
-    #        # num[val].title()
-    #         eng_rus[num] = num.title()
-    #         print(f"{num.title()}")
-    #     else:
-    #         print(f"{num}")
-    # for element in num:
-    #     if element.title():
-    #         print(f"{element.title()}")
-    #     else:
-    #         print(f"{element}")
-    if num.title():
-        print(f"{num.title()}")
-    else:
-        print(f"{num}")
+def num_translate_adv(num):
+    eng_rus = {
+        'zero': 'ноль',
+        'one': 'один',
+        'two': 'два',
+        'three': 'три',
+        'four': 'четыре',
+        'five': 'пять',
+        'six': 'шесть',
+        'seven': 'семь',
+        'eight': 'восемь',
+        'nine': 'девять',
+        'ten': 'десять',
+    }
+
+    for num in eng_rus:
+        if num.title():
+            print(eng_rus.get(num.title()))
+        else:
+            print(eng_rus.get(num))
+
+    #print(eng_rus.get(num))
 
 
-eng_rus = {
-    'zero': 'ноль',
-    'one': 'один',
-    'two': 'два',
-    'three': 'три',
-    'four': 'четыре',
-    'five': 'пять',
-    'six': 'шесть',
-    'seven': 'семь',
-    'eight': 'восемь',
-    'nine': 'девять',
-    'ten': 'десять',
-}
+num_translate_adv("zero")
 
 
-num_translate(eng_rus.get("ten"))
+
+
+
+
+
+

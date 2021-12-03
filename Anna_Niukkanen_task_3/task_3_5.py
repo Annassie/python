@@ -5,23 +5,25 @@
 # adverbs = ["today", "yesterday", "tomorrow", "the day before yesterday", "at night"]
 # adjectives = ["cheerful", "bright", "green", "utopian", "soft"]
 
+"""Import random"""
+
+import random
 from random import choice
+from random import randrange
 
-def get_jokes(*jokes):
-
-
-
+def get_jokes():
     joke_nouns = ["car", "forest", "fire", "city", "house"]
     joke_adverbs = ["today", "yesterday", "tomorrow", "the day before yesterday", "at night"]
     joke_adjectives = ["cheerful", "bright", "green", "utopian", "soft"]
 
+    """Shuffle arguments at random"""
+    random.shuffle(joke_nouns)
+    random.shuffle(joke_adverbs)
+    random.shuffle(joke_adjectives)
 
-    joke = choice(joke_nouns)
-
+    """Stick lists together by zip()"""
     for nouns, adverbs, adjectives in zip(joke_nouns, joke_adverbs, joke_adjectives):
-        print(f'{joke}')
-
+        print(f'{nouns} {adverbs} {adjectives}')
 
 get_jokes()
-
 
