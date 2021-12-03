@@ -23,5 +23,11 @@ Basic Python:
 
 ### Task_3
 
+- functions
+- dictionary
+- arguments (*arg, **kwargs)
+- random
+- filter(), map() zip()
+
 
 ### Task_4
